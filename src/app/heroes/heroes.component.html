@@ -1,11 +1,10 @@
-<h2>My Heroes</h2>
+<div *ngIf="messageService.messages.length">
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes"
-      [class.selected]="hero === selectedHero"
-      (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="messageService.clear()">
+    clear
+  </button>
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+</div>
