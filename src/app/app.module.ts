@@ -31,6 +31,21 @@ import { MessagesComponent }    from './messages/messages.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
+
+/*
+imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    AppRoutingModule
+],*/
+
+
+
+
+
+
   declarations: [
     AppComponent,
     DashboardComponent,
